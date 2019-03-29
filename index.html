@@ -1,48 +1,72 @@
+<!--
+	- styled banner w/ photo and name
+	- single page
+	- social media links (w/ linkedin)
+	- github section w/ links
+			- link to deployed
+			- link to github
+	- pdf resume link
+	- mobile version
+	- colors update
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Curtis Humphrey</title>
+	<meta charset="utf-8">
+	<title>Curtis Humphrey</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class=name-nav>
-            <section id="topname">Curtis Humphrey</section>
-                        
-            <nav>
-                <a href="index.html" id="navlink">About</a>
-                <a href="portfolio.html" id="navlink">Portfolio</a>
-                <a href="contact.html" id="navlink">Contact</a>
-            </nav>
-            
-            <!--small lines between links-->
-            <div class="line1"></div>
-            <div class="line2"></div>
+	
+	<div class="container" id="top">
+		<div class="row">
+			<div class="col-2">
+				<button type="button" class="btn btn-dark btn-lg rounded-pill">contact</button>
+			</div>
+			<div class="col-7"></div>
+			<div class="col-3">	
+				<a href="https://github.com/1curtislee" target="_blank" class="link">
+					<i class="fab fa-github fa-3x"></i>
+				</a>
+				<a href="https://instagram.com/curtisthemusic" target="_blank" class="link">
+					<i class="fab fa-instagram fa-3x"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/1curtislee/" target="_blank" class="link">
+					<i class="fab fa-linkedin fa-3x"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 
-        </div>
-    </header>
+	<div class="jumbotron">
+		<h1 class="display-4">curtis humphrey</h1>
+		<hr class=>
+		<p class="my-4"></p>
+	</div>
 
-    <section class="content-container">
-        <div class="content">
-            <h2>About Me</h2>
 
-            <hr>
-            <img src="assets/images/36659282_10156468552078936_9054134949409456128_n.jpg" id="headshot">
+	<section class="content-container">
+		<div class="content">
+			<h2>About</h2>
 
-            <p class="bio">
-            Curtis is a musician, coffee professional, and aspiring web developer with a passion for detail. 
-            Curtis has worked with independent artists, churches, and local businesses all over southern California with things like branding, event planning, and technical media. 
-            <br>Whether it's editing visual designs, synthsizing electronic sounds, playing music, or brewing craft coffee, its all done using the methodical procces by which he creates and collaborates.
-            </p>
-        </div>
-    </section>
+			<hr>
 
-    <footer>
-        Copyright ©
-    </footer>
+			<p class="bio">
+			Curtis is a musician, coffee professional, and aspiring web developer with a passion for detail. 
+			Curtis has worked with independent artists, churches, and local businesses all over southern California with things like branding, event planning, and technical media. 
+			<br>Whether it's editing visual designs, synthsizing electronic sounds, playing music, or brewing craft coffee, its all done using the methodical procces by which he creates and collaborates.
+			</p>
+		</div>
+	</section>
+
+	<footer>
+		Copyright ©
+	</footer>
 
 </body>
 </html>

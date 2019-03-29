@@ -5,12 +5,8 @@
 /* PAGE ELEMENTS-All Pages */
 body {
     width: 960px;
-    margin: auto;
-    background-image: url("/Users/curtishumphrey/Coding/Basic-Portfolio/assets/images/white-waves.png");
+    margin: auto !important;
 }
-
-
-
 
 header {
     z-index: 1;
@@ -25,6 +21,7 @@ header {
     right: 0;
 }
 
+
 #topname {
     float: left;
     background-color: #4aaaa5;
@@ -32,73 +29,12 @@ header {
     padding: 20px;
 }
 
-nav {
-    font-size: 20px;
-    float: right;
-    color: #777;
-    padding: 20px;
-    padding-right: 0px;
+#top {
+    margin: 10px;
 }
 
-/* NAVLINKS */
-#navlink {
-    padding-left: 30px;
-}
-
-a:link {
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
-    color: #777;
-}
-a:hover {
-    text-decoration: none;
-    color: palevioletred;
-}
-a:active {
-    text-decoration: none;
-    color: black;
-}
-
-.line1 {
-    border-right: 1px solid #ddd;
-    height: 20px;
-    position: absolute;
-    right: 198px;
-    top: 22px;
-}
-
-.line2 {
-    border-right: 1px solid #ddd;
-    height: 20px;
-    position: absolute;
-    right: 85px;
-    top: 22px;
-}
-
-.name-nav {
-    margin: auto;
-    width: 960px;
-    position: relative;
-}
-
-hr {
-    clear: both;
-    margin-bottom: 20px;
-    display: block;
-    size: 5px;
-}
-
-h1 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    padding: 20px
-}
-
-h2 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    color: #4aaaa5;
-    float: left;
+.rounded-pill {
+    margin-left: 20px;
 }
 
 .content-container {
