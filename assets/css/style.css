@@ -12,6 +12,10 @@ h1 {
     font-size: 4.0rem !important;   
 }
 
+.my-3 {
+    text-align: center;
+}
+
 #name {
     padding-left: 50px;
 }
