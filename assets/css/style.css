@@ -6,6 +6,12 @@
 body {
     width: 960px;
     margin: auto !important;
+    background-image: url("thunder-purple-blur.png");
+    background-color: #444444;
+}
+
+.jumbotron {
+    background-color: hsla(0, 0%, 100%, 0.6) !important;
 }
 
 h1 {
