@@ -1,0 +1,83 @@
+body {
+    background-image: url("thunder-purple-blur.png");
+    background-color: #444444;
+    margin: auto !important;
+}
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {
+        body {
+            width: 100%;
+        }
+        h1 {
+            font-size: 5.0rem !important;   
+        }
+    }
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        body {
+            width: 960px;
+        }
+        h1 {
+            font-size: 4.0rem !important;   
+        }
+    }
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+    
+    }
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
+
+.jumbotron {
+    background-color: hsla(0, 0%, 100%, 0.6) !important;
+    padding: 40px !important;
+}
+
+
+
+.my-3 {
+    text-align: center;
+}
+
+.my-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#name {
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+
+    /* links */
+    a:link {
+        margin: 4px;
+    }
+
+    a:link, a:visited {
+        color: black;
+        opacity: 0.7;
+    }
+    a:hover {
+        color: black !important;
+        opacity: 1;
+        text-decoration: none !important;
+    }
+    a:active {
+        color: gray !important;
+        text-decoration: none !important;
+    }
+
+#projects {
+    clear: both;
+}
+
+#top {
+    margin: 10px;
+}
+
+#headshot {
+    float: left;
+    height: 300px;
+}
+
