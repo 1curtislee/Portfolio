@@ -1,5 +1,5 @@
 # Portfolio
-## Curtis Humphrey
+### Curtis Humphrey
 
 See deployed projects by Curtis Humphrey. Each project has a link to the interactable application, and a link to the base code.  
 
