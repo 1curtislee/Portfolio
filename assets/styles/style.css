@@ -49,14 +49,14 @@ body {
     margin-bottom: 40px;
 }
 
-    /* links */
+    links
     a:link {
         margin: 4px;
     }
 
     a:link, a:visited {
         color: black;
-        /* opacity: 0.7; */
+  
     }
     a:hover {
         color: black !important;
@@ -66,10 +66,15 @@ body {
     a:active {
         color: gray !important;
         text-decoration: none !important;
-    }
+    } 
+
 
 #projects {
     clear: both;
+}
+
+#fa-github, #fa-linkedin, #fa-instagram {
+    padding: 20px;
 }
 
 #top {
