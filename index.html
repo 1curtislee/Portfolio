@@ -33,28 +33,28 @@
 
 	<div class="container" id="top">
 		<div class="row">
-			<div class="col-4">
+			<div class="col s3">
 				<a href="#modal1">
 					<button 
 						id="contactButton" 
 						type="button"
 						data-target="modal1"
-						class="btn rounded-pill grey darken-1 modal-trigger" 
+						class="btn-large rounded-pill grey darken-1 modal-trigger" 
 					><i class="material-icons left">phone_iphone</i>contact</button>
-					
+				</a>
 			</div>
-			<div class="col-4">
+			<div class="col s3">
 				<a href="https://1curtislee.github.io/Portfolio/assets/CH-Resume-2019.pdf" target="_blank" class="link">
 					
 					<button 
 						id="resumeButton"
 						type="button"
-						class="btn rounded-pill grey darken-1"
+						class="btn-large rounded-pill grey darken-1"
 					><i class="material-icons left">assignment_ind</i>resume</button>
 				</a>
 			</div>
 
-			<div class="col-4 d-flex justify-content-end">	
+			<div class="col s4 push-s0 push-m2 push-l6">	
 				<a href="https://github.com/1curtislee" target="_blank" class="link">
 					<i class="fab fa-github fa-3x"></i>
 				</a>
@@ -74,7 +74,7 @@
 
 	<div class="jumbotron jumbotron-fluid">
 		<div class="row align-items-center" id="name">
-			<img src="./assets/images/headshot.jpg" alt="Curtis Humphrey" class="rounded-circle" id="headshot">
+			<img class="circle" src="./assets/images/headshot.jpg" alt="Curtis Humphrey" id="headshot">
 			<div class="col-1"></div>
 			<h1 class="display-4 col-6">Curtis Humphrey</h1>
 		
@@ -94,79 +94,112 @@
 
 
 	<div class="container" id="projects">
-		<h2>Projects</h2>
-		<div class="row">
-			<div class="col">	
-				<a href="https://1curtislee.github.io/Crystal-Collector/">
-					<div class="card" style="width: 16rem;">
-						<img src="./assets/images/crystalgame.png" class="card-img-top" style="height:225px" alt="Crystal Game">
-						<div class="card-body">
-							<h5 class="card-title">Crytsal Game</h5>
-							<p class="card-text">A number guessing game created with HTML, CSS, and Javascript</p><br>
-							<a href="https://1curtislee.github.io/Crystal-Collector/"><button class="btn btn-dark">Game</button></a>
-							<a href="https://github.com/1curtislee/Crystal-Collector"><button class="btn btn-dark">Code</button></a>
-						</div>
-					</div>
-				</a>
-			</div>
 
-			<div class="col">	
-				<a href="https://1curtislee.github.io/Hangman-Game/">
-					<div class="card" style="width: 16rem;">
-						<img src="./assets/images/hangmangame.png" class="card-img-top" style="height:225px" alt="Hangman Game">
-						<div class="card-body">
-							<h5 class="card-title">Hangman Game</h5>
-							<p class="card-text">A word guess game created with HTML, CSS, and Javascript</p><br>
-							<a href="https://1curtislee.github.io/Hangman-Game/"><button class="btn btn-dark">Game</button></a>
-							<a href="https://github.com/1curtislee/Hangman-Game"><button class="btn btn-dark">Code</button></a>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<a href="https://cookingwiki.herokuapp.com/">
+							<img class="circle" src="./assets/images/my_cookbook.png" style="height:6rem;width:6rem" alt="My Cookbook">
+						</a>
+					</td>
+					<td>
+						<div>
+							<h5>My Cookbook</h5>
+							<p>An online cookbook where you can save your recipes. Created using Node, Express, mySQL, Handlebars, CSS, and Javascript</p><br>
+							<a href="https://cookingwiki.herokuapp.com/">
+								<button class="btn rounded-pill grey darken-1">Site</button>
+							</a>
+							<a href="https://github.com/iambrandonwhite/Cooking-Wiki">
+								<button class="btn rounded-pill grey darken-1">Code</button>
+							</a>
 						</div>
-					</div>
-				</a>
-			</div>
+					</td>
+				</tr>
 
-			<div class="col">	
-				<a href="https://1curtislee.github.io/Currency-Converter/">
-					<div class="card" style="width: 16rem;">
-						<img src="./assets/images/currency-converter.png" class="card-img-top" style="height:225px" alt="Currency Converter">
-						<div class="card-body">
-							<h5 class="card-title">Currency Converter</h5>
-							<p class="card-text">Simple site to view and convert major currencies. Made using HTML, CSS, and Javascript</p><br>
-							<a href="https://1curtislee.github.io/Currency-Converter/"><button class="btn btn-dark">Site</button></a>
-							<a href="https://github.com/1curtislee/Currency-Converter"><button class="btn btn-dark">Code</button></a>
+				<tr>
+					<td>
+						<a href="https://1curtislee.github.io/Hangman-Game/">
+							<img class="circle projectThumbnail" src="./assets/images/hangmangame.png" style="height:6rem;width:6rem" alt="Hangman Game">
+						</a>
+					</td>
+					<td>
+						<div>
+							<h5>Hangman Game</h5>
+							<p>A word guess game created with HTML, CSS, and Javascript</p><br>
+							<a href="https://1curtislee.github.io/Hangman-Game/">
+								<button type="button" class="btn rounded-pill grey darken-1">Game</button>
+							</a>
+							<a href="https://github.com/1curtislee/Hangman-Game">
+								<button type="button" class="btn rounded-pill grey darken-1">Code</button>
+							</a>
 						</div>
-					</div>
-				</a>
-			</div>
+					</td>
+				</tr>
 
-			<div class="col">	
-				<a href="https://cookingwiki.herokuapp.com/">
-					<div class="card" style="width: 16rem;">
-						<img src="./assets/images/my_cookbook.png" class="card-img-top" style="height:225px" alt="Hangman Game">
-						<div class="card-body">
-							<h5 class="card-title">My Cookbook</h5>
-							<p class="card-text">An online cookbook where you can save your recipes. Created using Node, Express, mySQL, Handlebars, CSS, and Javascript</p><br>
-							<a href="https://cookingwiki.herokuapp.com/"><button class="btn btn-dark">Game</button></a>
-							<a href="https://github.com/iambrandonwhite/Cooking-Wiki"><button class="btn btn-dark">Code</button></a>
+				<tr>
+					<td>
+						<a href="https://1curtislee.github.io/Currency-Converter/">
+							<img class="circle" src="./assets/images/currency-converter.png" style="height:6rem;width:6rem" alt="Currency Converter">
+						</a>
+					</td>
+					<td>
+						<div>
+							<h5>Currency Converter</h5>
+							<p>Simple site to view and convert major currencies. Made using HTML, CSS, and Javascript</p><br>
+							<a href="https://1curtislee.github.io/Currency-Converter/">
+								<button type="button" class="btn rounded-pill grey darken-1">Site</button>
+							</a>
+							<a href="https://github.com/1curtislee/Currency-Converter">
+								<button class="btn rounded-pill grey darken-1">Code</button></a>
 						</div>
-					</div>
-				</a>
-			</div>
-
-			<div class="col">	
-				<a href="https://1curtislee.github.io/TrainScheduler/">
-					<div class="card" style="width: 16rem;">
-						<img src="./assets/images/train_scheduler.png" class="card-img-top" style="height:225px" alt="Hangman Game">
-						<div class="card-body">
-							<h5 class="card-title">Train Scheduler</h5>
-							<p class="card-text">Saves train departure and arrival times in a database. Created using mySQL, HTML, CSS, Bootstrap, and Javascript</p><br>
-							<a href="https://1curtislee.github.io/TrainScheduler/"><button class="btn btn-dark">Game</button></a>
-							<a href="https://github.com/1curtislee/TrainScheduler"><button class="btn btn-dark">Code</button></a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<a href="https://cookingwiki.herokuapp.com/">
+							<img class="circle" src="./assets/images/train_scheduler.png" style="height:6rem;width:6rem" alt="Train Scheduler">
+						</a>
+					</td>
+					<td>
+						<div>
+							<div>
+								<h5>Train Scheduler</h5>
+								<p>Saves train departure and arrival times in a database. Created using mySQL, HTML, CSS, Bootstrap, and Javascript</p><br>
+								<a href="https://1curtislee.github.io/TrainScheduler/">
+									<button class="btn rounded-pill grey darken-1">Site</button>
+								</a>
+								<a href="https://github.com/1curtislee/TrainScheduler">
+									<button class="btn rounded-pill grey darken-1">Code</button>
+								</a>
+							</div>
 						</div>
-					</div>
-				</a>
-			</div>
+					</td>
+				</tr>
 
-		</div>
+				<tr>
+					<td>
+						<a href="https://1curtislee.github.io/Crystal-Collector/">
+							<img class="circle" src="./assets/images/crystalgame.png" style="height:6rem;width:6rem" alt="Crystal Game">
+						</a>
+					</td>
+					<td>
+						<div>
+							<h5>Crystal Game</h5>
+							<p>A number guessing game created with HTML, CSS, and Javascript</p><br>
+							<a href="https://1curtislee.github.io/Crystal-Collector/">
+								<button type="button" class="btn rounded-pill grey darken-1">Game</button>
+							</a>
+							<a href="https://github.com/1curtislee/Crystal-Collector">
+								<button type="button" class="btn rounded-pill grey darken-1">Code</button></a>
+						</div>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
 	</div>
 
 	<script src="./assets/js/logic.js"></script>

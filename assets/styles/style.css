@@ -1,7 +1,11 @@
 body {
-    background-image: url("thunder-purple-blur.png");
-    background-color: #444444;
+    background-image: url("./thunder-purple-blur.jpeg");
+    background-repeat: no-repeat;
+    background-position: center top !important;
+    background-color: #b599c1;
+    background-size: cover;
     margin: auto !important;
+    padding-top: 20px;
 }
     /* Small devices (landscape phones, 576px and up) */
     @media (min-width: 576px) {
@@ -10,6 +14,9 @@ body {
         }
         h1 {
             font-size: 5.0rem !important;   
+        }
+        p {
+            font-size: 2.0rem !important;
         }
     }
     /* Medium devices (tablets, 768px and up) */
@@ -20,10 +27,15 @@ body {
         h1 {
             font-size: 4.0rem !important;   
         }
+        p {
+            font-size: 2.0rem !important;
+        }
     }
     /* Large devices (desktops, 992px and up) */
     @media (min-width: 992px) {
-    
+        p {
+            font-size: 1.0rem !important;
+        }
     }
     /* Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) {}
@@ -33,7 +45,9 @@ body {
     padding: 40px !important;
 }
 
-
+.projectThumbnail {
+    margin-right: 20px;
+}
 
 .my-3 {
     text-align: center;
@@ -51,7 +65,7 @@ body {
 
     links
     a:link {
-        margin: 4px;
+        margin: 3px;
     }
 
     a:link, a:visited {
@@ -74,7 +88,8 @@ body {
 }
 
 #fa-github, #fa-linkedin, #fa-instagram {
-    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #top {
