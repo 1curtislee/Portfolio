@@ -8,7 +8,7 @@ body {
     padding-top: 20px;
 }
     /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) {
+    @media (min-width: 320px) {
         body {
             width: 100%;
         }
@@ -45,6 +45,10 @@ body {
     padding: 40px !important;
 }
 
+.modal {
+    max-height: fit-content !important;
+}
+
 .projectThumbnail {
     margin-right: 20px;
 }
@@ -63,7 +67,7 @@ body {
     margin-bottom: 40px;
 }
 
-    links
+    /* links */
     a:link {
         margin: 3px;
     }

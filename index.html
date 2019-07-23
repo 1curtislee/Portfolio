@@ -14,22 +14,46 @@
 </head>
 
 <body>
-	<!-- Modal Structure -->
+
+	<!-- Modal -->
 	<div id="modal1" class="modal">
-		<!-- <div class="modal-footer">
-			
-		</div> -->
 		<div class="modal-content">
-			<a href="#!" class="modal-close">
-				<i class="material-icons right">close</i>
-			</a>
-
-			<h4>Contact</h4>
-			Form
+				<a href="#!" class="modal-close">
+					<i class="material-icons right">close</i>
+				</a>
+			<h4>Contact Curtis</h4>
+			<p>
+				Send a message! If you prefer to use your own email client, click<a href="#"><b><u>here</u></b></a>
+			</p>
+			<form>
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="last_name" type="text" class="validate">
+						<label for="last_name">Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<textarea id="textarea1" class="materialize-textarea"></textarea>
+						<label for="textarea1">Message</label>
+					</div>
+				</div>
+				<input 
+					type="submit"
+					value="send"
+					class="btn-large rounded-pill grey darken-1"
+					id="contactSubmit"
+				></input>
+			</form>
 		</div>
-
-		
 	</div>
+	<!-- end modal -->
 
 	<div class="container" id="top">
 		<div class="row">
@@ -45,7 +69,6 @@
 			</div>
 			<div class="col s3">
 				<a href="https://1curtislee.github.io/Portfolio/assets/CH-Resume-2019.pdf" target="_blank" class="link">
-					
 					<button 
 						id="resumeButton"
 						type="button"
@@ -81,9 +104,12 @@
 		</div>
 		<hr>
 		<p class="my-4">
-			Freelance web developer with 10+ years of experience in computers and media technology. I’ve always had a strong desire to learn everything I can about the tools I use, and to use those tools to their full potential. I’m very detail oriented, self-motivated, and able to work in a fast-paced environment.<br/>
+			Freelance web developer with 10+ years of experience in computers and media technology. 
+			I’ve always had a strong desire to learn everything I can about the tools I use, and to use those tools to their full potential. 
+			I’m very detail oriented, self-motivated, and able to work in a fast-paced environment.<br/>
 			<br/>
-			I have experience using frontend technologies like Javascript, React, NodeJS, HTML, CSS, Bootstrap, Handlebars and Express, and database tools like MySQL, MongoDB, and Firebase.
+			I have experience using frontend technologies like Javascript, React, NodeJS, 
+			HTML, CSS, Bootstrap, Handlebars and Express, and database tools like MySQL, MongoDB, and Firebase.
 
 		</p>
 
@@ -99,7 +125,7 @@
 			<tbody>
 				<tr>
 					<td>
-						<a href="https://cookingwiki.herokuapp.com/">
+						<a href="https://cookingwiki.herokuapp.com/" target="_blank">
 							<img class="circle" src="./assets/images/my_cookbook.png" style="height:6rem;width:6rem" alt="My Cookbook">
 						</a>
 					</td>
@@ -107,10 +133,10 @@
 						<div>
 							<h5>My Cookbook</h5>
 							<p>An online cookbook where you can save your recipes. Created using Node, Express, mySQL, Handlebars, CSS, and Javascript</p><br>
-							<a href="https://cookingwiki.herokuapp.com/">
+							<a href="https://cookingwiki.herokuapp.com/" target="_blank">
 								<button class="btn rounded-pill grey darken-1">Site</button>
 							</a>
-							<a href="https://github.com/iambrandonwhite/Cooking-Wiki">
+							<a href="https://github.com/iambrandonwhite/Cooking-Wiki" target="_blank">
 								<button class="btn rounded-pill grey darken-1">Code</button>
 							</a>
 						</div>
@@ -119,7 +145,7 @@
 
 				<tr>
 					<td>
-						<a href="https://1curtislee.github.io/Hangman-Game/">
+						<a href="https://1curtislee.github.io/Hangman-Game/" target="_blank">
 							<img class="circle projectThumbnail" src="./assets/images/hangmangame.png" style="height:6rem;width:6rem" alt="Hangman Game">
 						</a>
 					</td>
@@ -127,11 +153,11 @@
 						<div>
 							<h5>Hangman Game</h5>
 							<p>A word guess game created with HTML, CSS, and Javascript</p><br>
-							<a href="https://1curtislee.github.io/Hangman-Game/">
-								<button type="button" class="btn rounded-pill grey darken-1">Game</button>
+							<a href="https://1curtislee.github.io/Hangman-Game/" target="_blank">
+								<button class="btn rounded-pill grey darken-1">Game</button>
 							</a>
-							<a href="https://github.com/1curtislee/Hangman-Game">
-								<button type="button" class="btn rounded-pill grey darken-1">Code</button>
+							<a href="https://github.com/1curtislee/Hangman-Game" target="_blank">
+								<button class="btn rounded-pill grey darken-1">Code</button>
 							</a>
 						</div>
 					</td>
@@ -139,7 +165,7 @@
 
 				<tr>
 					<td>
-						<a href="https://1curtislee.github.io/Currency-Converter/">
+						<a href="https://1curtislee.github.io/Currency-Converter/" target="_blank">
 							<img class="circle" src="./assets/images/currency-converter.png" style="height:6rem;width:6rem" alt="Currency Converter">
 						</a>
 					</td>
@@ -147,18 +173,19 @@
 						<div>
 							<h5>Currency Converter</h5>
 							<p>Simple site to view and convert major currencies. Made using HTML, CSS, and Javascript</p><br>
-							<a href="https://1curtislee.github.io/Currency-Converter/">
-								<button type="button" class="btn rounded-pill grey darken-1">Site</button>
+							<a href="https://1curtislee.github.io/Currency-Converter/" target="_blank">
+								<button class="btn rounded-pill grey darken-1">Site</button>
 							</a>
-							<a href="https://github.com/1curtislee/Currency-Converter">
-								<button class="btn rounded-pill grey darken-1">Code</button></a>
+							<a href="https://github.com/1curtislee/Currency-Converter" target="_blank">
+								<button class="btn rounded-pill grey darken-1">Code</button>
+							</a>
 						</div>
 					</td>
 				</tr>
 				
 				<tr>
 					<td>
-						<a href="https://cookingwiki.herokuapp.com/">
+						<a href="https://cookingwiki.herokuapp.com/" target="_blank">
 							<img class="circle" src="./assets/images/train_scheduler.png" style="height:6rem;width:6rem" alt="Train Scheduler">
 						</a>
 					</td>
@@ -167,10 +194,10 @@
 							<div>
 								<h5>Train Scheduler</h5>
 								<p>Saves train departure and arrival times in a database. Created using mySQL, HTML, CSS, Bootstrap, and Javascript</p><br>
-								<a href="https://1curtislee.github.io/TrainScheduler/">
+								<a href="https://1curtislee.github.io/TrainScheduler/" target="_blank">
 									<button class="btn rounded-pill grey darken-1">Site</button>
 								</a>
-								<a href="https://github.com/1curtislee/TrainScheduler">
+								<a href="https://github.com/1curtislee/TrainScheduler" target="_blank">
 									<button class="btn rounded-pill grey darken-1">Code</button>
 								</a>
 							</div>
@@ -180,7 +207,7 @@
 
 				<tr>
 					<td>
-						<a href="https://1curtislee.github.io/Crystal-Collector/">
+						<a href="https://1curtislee.github.io/Crystal-Collector/" target="_blank">
 							<img class="circle" src="./assets/images/crystalgame.png" style="height:6rem;width:6rem" alt="Crystal Game">
 						</a>
 					</td>
@@ -188,11 +215,11 @@
 						<div>
 							<h5>Crystal Game</h5>
 							<p>A number guessing game created with HTML, CSS, and Javascript</p><br>
-							<a href="https://1curtislee.github.io/Crystal-Collector/">
-								<button type="button" class="btn rounded-pill grey darken-1">Game</button>
+							<a href="https://1curtislee.github.io/Crystal-Collector/" target="_blank">
+								<button class="btn rounded-pill grey darken-1">Game</button>
 							</a>
-							<a href="https://github.com/1curtislee/Crystal-Collector">
-								<button type="button" class="btn rounded-pill grey darken-1">Code</button></a>
+							<a href="https://github.com/1curtislee/Crystal-Collector" target="_blank">
+								<button class="btn rounded-pill grey darken-1">Code</button></a>
 						</div>
 					</td>
 				</tr>
