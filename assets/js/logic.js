@@ -8,7 +8,7 @@ $('#contactSubmit').on('click', function(){
   console.log('contact form coming soon...')
 
   const sgMail = require('@sendgrid/mail');
-  // 'require' problem, require must be in a node file (like server.js)
+  // 'require' problem, require must be in a node-run file (like server.js)
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
