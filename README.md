@@ -5,4 +5,4 @@ See deployed projects by Curtis Humphrey. Each project has a link to the interac
 
 Portfolio created using HTML, CSS, Bootstrap, and Javascript.
 
-https://1curtislee.github.io/Portfolio/
+https://ch--portfolio.herokuapp.com/
