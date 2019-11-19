@@ -1,107 +1,106 @@
 body {
-    background-image: url("./thunder-purple-blur.jpeg");
-    background-repeat: no-repeat;
-    background-position: center top !important;
-    background-color: #b599c1;
-    background-size: cover;
-    margin: auto !important;
-    padding-top: 20px;
+  background-image: url("./thunder-purple-blur.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top !important;
+  background-color: #b599c1;
+  background-size: cover;
+  margin: auto !important;
+  padding-top: 20px;
 }
-    /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 320px) {
-        body {
-            width: 100%;
-        }
-        h1 {
-            font-size: 5.0rem !important;   
-        }
-        p {
-            font-size: 2.0rem !important;
-        }
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 320px) {
+    body {
+      width: 100%;
     }
-    /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) {
-        body {
-            width: 960px;
-        }
-        h1 {
-            font-size: 4.0rem !important;   
-        }
-        p {
-            font-size: 2.0rem !important;
-        }
+    h1 {
+      font-size: 5.0rem !important;   
     }
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) {
-        p {
-            font-size: 1.0rem !important;
-        }
+    p {
+      font-size: 2.0rem !important;
     }
-    /* Extra large devices (large desktops, 1200px and up) */
-    @media (min-width: 1200px) {}
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    body {
+      width: 960px;
+    }
+    h1 {
+      font-size: 4.0rem !important;   
+    }
+    p {
+      font-size: 2.0rem !important;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    p {
+      font-size: 1.0rem !important;
+    }
+}
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {}
 
 .jumbotron {
-    background-color: hsla(0, 0%, 100%, 0.6) !important;
-    padding: 40px !important;
+  background-color: hsla(0, 0%, 100%, 0.6) !important;
+  padding: 40px !important;
 }
 
 .modal {
-    max-height: fit-content !important;
+  max-height: fit-content !important;
 }
 
 .projectThumbnail {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .my-3 {
-    text-align: center;
+  text-align: center;
 }
 
 .my-4 {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #name {
-    padding-left: 50px;
-    margin-bottom: 40px;
+  padding-left: 50px;
+  margin-bottom: 40px;
 }
 
-    /* links */
-    a:link {
-        margin: 3px;
-    }
+  /* links */
+  a:link {
+    margin: 3px;
+  }
 
-    a:link, a:visited {
-        color: black;
-  
-    }
-    a:hover {
-        color: black !important;
-        opacity: 1;
-        text-decoration: none !important;
-    }
-    a:active {
-        color: gray !important;
-        text-decoration: none !important;
-    } 
+  a:link, a:visited {
+    color: black;
 
-
-#projects {
-    clear: both;
-}
+  }
+  a:hover {
+    color: black !important;
+    opacity: 1;
+    text-decoration: none !important;
+  }
+  a:active {
+    color: gray !important;
+    text-decoration: none !important;
+  } 
 
 #fa-github, #fa-linkedin, #fa-instagram {
-    margin-left: 40px;
-    margin-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #top {
-    margin: 10px;
+  margin: 10px;
+}
+
+#projects {
+  width: 100% !important;
 }
 
 #headshot {
-    float: left;
-    height: 300px;
+  float: left;
+  height: 300px;
 }
 
