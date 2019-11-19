@@ -46,7 +46,7 @@ body {
 }
 
 .modal {
-  max-height: fit-content !important;
+  height: inherit !important;
 }
 
 .projectThumbnail {
