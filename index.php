@@ -9,4 +9,6 @@ if($_POST["submit"]) {
   mail($recipient, $subject, $_POST["message"], "From: $sender");
 }
 
-include_once("index.html");
+?>
+
+<?php include_once("index.html"); ?>
