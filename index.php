@@ -1,4 +1,6 @@
-<?php
+<?php 
+
+include_once("index.html");
 
 if($_POST["submit"]) {
   $recipient="curtishumphrey1@gmail.com";
@@ -10,5 +12,3 @@ if($_POST["submit"]) {
 }
 
 ?>
-
-<?php include_once("index.html"); ?>
