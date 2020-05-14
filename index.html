@@ -48,11 +48,11 @@
 			<p>
 				Send a message! If you prefer to use your own email client, click<a href="mailto:curtishumphrey1@gmail.com"><b><u>here</u></b></a>
 			</p>
-			<form>
+			<form action="mailto:curtishumphrey1@gmail.com" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="input-field col s6">
-						<input id="last_name" type="text" class="validate">
-						<label for="last_name">Name</label>
+						<input id="name" type="text" class="validate">
+						<label for="name">Name</label>
 					</div>
 				</div>
 				<div class="row">
@@ -63,8 +63,8 @@
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<textarea id="textarea1" class="materialize-textarea"></textarea>
-						<label for="textarea1">Message</label>
+						<textarea id="message" name="message" class="materialize-textarea"></textarea>
+						<label for="message">Message</label>
 					</div>
 				</div>
 				<input 
