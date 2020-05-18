@@ -42,29 +42,24 @@
 					<i class="material-icons right">close</i>
 				</a>
       <h3>Contact Curtis</h3>
-      
-      <a href="tel:559-358-0090"><h4><u>559-358-0090</u></h4></a>
 
-			<p>
-				Send a message! If you prefer to use your own email client, click<a href="mailto:curtishumphrey1@gmail.com"><b><u>here</u></b></a>
-			</p>
-			<form id="contactForm" method="post" onSubmit="contactEmail();">
+			<form id="contactForm" method="post" action="/email">
 				<div class="row">
 					<div class="input-field col s6">
-						<input id="formName" type="text" class="validate">
 						<label for="formName">Name</label>
+						<input id="formName" type="text" name="forName" class="validate">
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input id="email" type="email" class="validate">
 						<label for="email">Email</label>
+						<input id="email" name="formEmail" type="email" class="validate">
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<textarea id="message" name="message" class="materialize-textarea"></textarea>
 						<label for="message">Message</label>
+						<textarea id="message" name="formMessage" class="materialize-textarea"></textarea>
 					</div>
 				</div>
 				<input 
@@ -73,7 +68,13 @@
 					class="btn-large rounded-pill grey darken-1"
 					id="contactSubmit"
 				></input>
-			</form>
+      </form>
+
+      <br/>
+
+      <p><i class="material-icons left">phone</i><a href="tel:559-358-0090"><u>559-358-0090</u></h4></a></p>
+      <p><i class="material-icons left">mail</i><a href="mailto:curtishumphrey1@gmail.com" target="_blank"><u>curtishumphrey1@gmail.com</u></h4></a></p>
+
 		</div>
 	</div>
 	<!-- end modal -->
@@ -87,7 +88,7 @@
 						type="button"
 						data-target="modal1"
 						class="btn-large rounded-pill grey darken-1 modal-trigger" 
-					><i class="material-icons left">phone_iphone</i>contact</button>
+					><i class="material-icons right">phone_iphone</i>contact</button>
 				</a>
 			</div>
 			<div class="col s3">
