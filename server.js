@@ -1,14 +1,14 @@
 require('dotenv').config();
-const path = require('path');
-const express =  require('express');
-const helmet = require('helmet'); // helps set headers, https://www.npmjs.com/package/helmet
+import { join } from 'path';
+import express, { urlencoded, static, json } from 'express';
+import helmet from 'helmet'; // helps set headers, https://www.npmjs.com/package/helmet
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(helmet());
-app.use(express.urlencoded({ extended: false })); 
-app.use(express.static(path.join(__dirname))); // uses static file
-app.use(express.json());
+app.use(urlencoded({ extended: false })); 
+app.use(static(join(__dirname))); // uses static file
+app.use(json());
 
 app.use((req, res, next) => { // not clear on what this section does...
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
@@ -21,9 +21,9 @@ app.options('*', function(req, res) {
 	res.send(200);
 });
 
-app.get('/', (req, res) => { res.sendFile(path.join(__dirname + '/index.html')); });
+app.get('/', (req, res) => { res.sendFile(join(__dirname + '/index.html')); });
 
-app.get('/resume', (req, res) => { res.sendFile(path.join(__dirname + '/Curtis-Humphrey-Resume-webdev.pdf')); });
+app.get('/resume', (req, res) => { res.sendFile(join(__dirname + '/Curtis-Humphrey-Resume-webdev.pdf')); });
 
 // contact form email handler
 app.post('/email', (req, res) => {
