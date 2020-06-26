@@ -1,4 +1,5 @@
 require('dotenv').config();
+const cors = require('cors');
 const path = require('path');
 const express =  require('express');
 const helmet = require('helmet'); // helps set headers, https://www.npmjs.com/package/helmet

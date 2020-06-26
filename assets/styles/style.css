@@ -8,35 +8,36 @@ body {
   margin: auto !important;
   padding-top: 20px;
 }
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 320px) {
-    body {
-      width: 100%;
-    }
-    h1 {
-      font-size: 5.0rem !important;   
-    }
-    p {
-      font-size: 2.0rem !important;
-    }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+  body {
+    width: 100%;
   }
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    body {
-      width: 960px;
-    }
-    h1 {
-      font-size: 4.0rem !important;   
-    }
-    p {
-      font-size: 2.0rem !important;
-    }
+  h1 {
+    font-size: 5.0rem !important;   
   }
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    p {
-      font-size: 1.0rem !important;
-    }
+  p {
+    font-size: 2.0rem !important;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    width: 960px;
+  }
+  h1 {
+    font-size: 4.0rem !important;   
+  }
+  p {
+    font-size: 2.0rem !important;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  p {
+    font-size: 1.0rem !important;
+  }
 }
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {}
@@ -93,6 +94,7 @@ a:active {
 }
 
 #projects {
+  color: #FFF;
   width: 100%;
   background-color:rgba(0, 0, 0, 0.336);
   border-radius: 20px;
