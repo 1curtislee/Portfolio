@@ -21,9 +21,9 @@ app.options('*', function(req, res) {
 	res.send(200);
 });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/index.html'));
-})
+app.get('/', (req, res) => { res.sendFile(path.join(__dirname + '/index.html')); });
+
+app.get('/resume', (req, res) => { res.sendFile(path.join(__dirname + '/Curtis-Humphrey-Resume-webdev.pdf')); });
 
 // contact form email handler
 app.post('/email', (req, res) => {
@@ -33,6 +33,8 @@ app.post('/email', (req, res) => {
 
   // using Twilio SendGrid's v3 Node.js Library
   // https://github.com/sendgrid/sendgrid-nodejs
+  console.log('recipient:', process.env.RECIPIENT);
+
   const sgMail = require('@sendgrid/mail');
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 

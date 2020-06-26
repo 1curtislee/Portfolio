@@ -49,6 +49,11 @@ body {
   height: inherit !important;
 }
 
+.jumbotron {
+  border-radius: 20px !important;
+
+}
+
 .projectThumbnail {
   margin-right: 20px;
 }
@@ -64,7 +69,7 @@ body {
 
 #name {
   padding-left: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; 
 }
 
   /* links */
@@ -73,11 +78,11 @@ body {
   }
 
   a:link, a:visited {
-    color: black;
+    color: rgb(197, 197, 197);
 
   }
   a:hover {
-    color: black !important;
+    color: rgb(51, 51, 51) !important;
     opacity: 1;
     text-decoration: none !important;
   }
@@ -96,11 +101,13 @@ body {
 }
 
 #projects {
-  width: 100% !important;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.336);
+  border-radius: 20px;
+  padding: 2%
 }
 
 #headshot {
-  float: left;
   height: 300px;
 }
 
