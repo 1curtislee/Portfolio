@@ -11,7 +11,6 @@
     gtag('config', 'UA-164877884-1');
   </script>
 
-
 	<meta charset="utf-8">
   <title>Curtis Humphrey</title>
   
@@ -42,29 +41,24 @@
 					<i class="material-icons right">close</i>
 				</a>
       <h3>Contact Curtis</h3>
-      
-      <a href="tel:559-358-0090"><h4><u>559-358-0090</u></h4></a>
 
-			<p>
-				Send a message! If you prefer to use your own email client, click<a href="mailto:curtishumphrey1@gmail.com"><b><u>here</u></b></a>
-			</p>
-			<form id="contactForm" method="post">
+			<form id="contactForm" method="post" action="/email">
 				<div class="row">
 					<div class="input-field col s6">
-						<input id="formName" type="text" class="validate">
 						<label for="formName">Name</label>
+						<input id="formName" type="text" name="forName" class="validate">
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input id="email" type="email" class="validate">
 						<label for="email">Email</label>
+						<input id="email" name="formEmail" type="email" class="validate">
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<textarea id="message" name="message" class="materialize-textarea"></textarea>
 						<label for="message">Message</label>
+						<textarea id="message" name="formMessage" class="materialize-textarea"></textarea>
 					</div>
 				</div>
 				<input 
@@ -73,14 +67,30 @@
 					class="btn-large rounded-pill grey darken-1"
 					id="contactSubmit"
 				></input>
-			</form>
+      </form>
+
+      <br/>
+
+      <p><i class="material-icons left">phone</i><a href="tel:559-358-0090"><u>559-358-0090</u></h4></a></p>
+      <p><i class="material-icons left">mail</i><a href="mailto:curtishumphrey1@gmail.com" target="_blank"><u>curtishumphrey1@gmail.com</u></h4></a></p>
+
 		</div>
 	</div>
 	<!-- end modal -->
 
-	<div class="container" id="top">
+	<div class="container-fluid" id="top">
 		<div class="row">
-			<div class="col s3">
+			
+			<div class="col center">
+				<a href="./Curtis-Humphrey-Resume-webdev.pdf" target="_blank" class="link">
+					<button 
+						id="resumeButton"
+						type="button"
+						class="btn-large rounded-pill grey darken-1"
+					><i class="material-icons left">assignment_ind</i>resume</button>
+				</a>
+			</div>
+      <div class="col center">
 				<a href="#modal1">
 					<button 
 						id="contactButton" 
@@ -90,17 +100,7 @@
 					><i class="material-icons left">phone_iphone</i>contact</button>
 				</a>
 			</div>
-			<div class="col s3">
-				<a href="./Curtis-Humphrey-Resume-webdev.pdf" target="_blank" class="link">
-					<button 
-						id="resumeButton"
-						type="button"
-						class="btn-large rounded-pill grey darken-1"
-					><i class="material-icons left">assignment_ind</i>resume</button>
-				</a>
-			</div>
-
-			<div class="col s4 push-s0 push-m2 push-l6">	
+			<div class="col center">	
 				<a href="https://github.com/1curtislee" target="_blank" class="link">
 					<i class="fab fa-github fa-3x"></i>
 				</a>
@@ -119,31 +119,34 @@
 	
 
 	<div class="jumbotron jumbotron-fluid">
-		<div class="row align-items-center" id="name">
-			<img class="circle" src="./assets/images/headshot.jpg" alt="Curtis Humphrey" id="headshot">
-			<div class="col-1"></div>
-			<h1 class="display-4 col-6">Curtis Humphrey</h1>
-		
-		</div>
-		<hr>
-		<p class="my-4">
-			Web developer with 10+ years of experience in computers and media technology. 
-			I’ve always had a strong desire to learn everything I can about the tools I use, and to use those tools to their full potential. <br/>
-			I'm passionate about problem solving and curating the look and feel of the internet. <br/>
-			<br/>
-			I have experience with Javascript, React, 
-			HTML, CSS, Bootstrap, Handlebars, NodeJS and Express.js, and database tools like MySQL, MongoDB, and Firebase.
-		</p>
-
+    <div class="row align-items-center" id="name">
+			<div class="col-lg center">
+        <img class="circle" src="./assets/images/headshot.jpg" alt="Curtis Humphrey" id="headshot">
+      </div>
+			<div class="col-lg center">
+        <h1 class="display-4">Curtis Humphrey</h1>
+      </div>
+    </div>
+    <hr>
+    <div class="col-lg">
+      <p class="my-4">
+        Web developer with 10+ years of experience in computers and media technology. 
+        I’ve always had a strong desire to learn everything I can about the tools I use, and to use those tools to their full potential. <br/>
+        I'm passionate about problem solving and curating the look and feel of the internet. <br/>
+        <br/>
+        I have experience with Javascript, React, 
+        HTML, CSS, Bootstrap, Handlebars, NodeJS and Express.js, and database tools like MySQL, MongoDB, and Firebase.
+      </p>
+    </div>
 	</div>
 
 
 
-	<div class="container" id="projects">
+	<div class="container-fluid" id="projects">
     <div class="row">
 
       <!-- web apps -->
-      <div class="col s6">
+      <div class="col-lg">
         <h5>Web Applications</h5>
         <table>
           <tbody>
@@ -252,7 +255,7 @@
       </div>
 
       <!-- client websites -->
-      <div class="col s6">
+      <div class="col-lg">
         <h5>Client Websites</h5>
         
         <table>

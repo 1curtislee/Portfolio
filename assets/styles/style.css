@@ -1,9 +1,10 @@
 body {
   background-image: url("./thunder-purple-blur.jpeg");
   background-repeat: no-repeat;
-  background-position: center top !important;
+  background-position: center center !important;
   background-color: #b599c1;
   background-size: cover;
+  background-attachment: fixed;
   margin: auto !important;
   padding-top: 20px;
 }
@@ -49,6 +50,11 @@ body {
   height: inherit !important;
 }
 
+.jumbotron {
+  border-radius: 20px !important;
+
+}
+
 .projectThumbnail {
   margin-right: 20px;
 }
@@ -62,45 +68,39 @@ body {
   padding-right: 20px;
 }
 
-#name {
-  padding-left: 50px;
-  margin-bottom: 40px;
+/* links */
+a:link {
+  margin: 3px;
 }
 
-  /* links */
-  a:link {
-    margin: 3px;
-  }
+a:link, a:visited {
+  color: rgb(197, 197, 197);
 
-  a:link, a:visited {
-    color: black;
-
-  }
-  a:hover {
-    color: black !important;
-    opacity: 1;
-    text-decoration: none !important;
-  }
-  a:active {
-    color: gray !important;
-    text-decoration: none !important;
-  } 
+}
+a:hover {
+  color: rgb(51, 51, 51) !important;
+  opacity: 1;
+  text-decoration: none !important;
+}
+a:active {
+  color: gray !important;
+  text-decoration: none !important;
+} 
 
 #fa-github, #fa-linkedin, #fa-instagram {
   margin-left: 40px;
   margin-right: 40px;
 }
 
-#top {
-  margin: 10px;
-}
-
 #projects {
-  width: 100% !important;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.336);
+  border-radius: 20px;
+  padding: 2em;
+  margin-bottom: 20px;
 }
 
 #headshot {
-  float: left;
-  height: 300px;
+  height: 30em;
 }
 
