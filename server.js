@@ -1,11 +1,13 @@
 require('dotenv').config();
 const path = require('path');
-const express =  require('express');
+const express = require('express');
+const cors = require('cors');
 const helmet = require('helmet'); // helps set headers, https://www.npmjs.com/package/helmet
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(helmet());
+app.use(cors());
 app.use(express.urlencoded({ extended: false })); 
 app.use(express.static(path.join(__dirname))); // uses static file
 app.use(express.json());
