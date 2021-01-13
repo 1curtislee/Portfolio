@@ -29,35 +29,35 @@ app.get('/resume', (req, res) => { res.sendFile(path.join(__dirname + '/Curtis-H
 
 // contact form email handler
 app.post('/email', (req, res) => {
-  let sender = req.body.formName;
-  let email = req.body.formEmail;
-  let message = req.body.formMessage;
+  // let sender = req.body.formName;
+  // let email = req.body.formEmail;
+  // let message = req.body.formMessage;
 
-  // using Twilio SendGrid's v3 Node.js Library
-  // https://github.com/sendgrid/sendgrid-nodejs
-  console.log('recipient:', process.env.RECIPIENT);
+  // // using Twilio SendGrid's v3 Node.js Library
+  // // https://github.com/sendgrid/sendgrid-nodejs
+  // console.log('recipient:', process.env.RECIPIENT);
 
-  const sgMail = require('@sendgrid/mail');
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  // const sgMail = require('@sendgrid/mail');
+  // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-  const msg = {
-    to: process.env.RECIPIENT,
-    from: email,
-    subject: 'contact form submission from ' + sender,
-    text: message,
-  };
-  sgMail
-  .send(msg)
-  .then(() => {}, error => {
-    console.log(error);
+  // const msg = {
+  //   to: process.env.RECIPIENT,
+  //   from: email,
+  //   subject: 'contact form submission from ' + sender,
+  //   text: message,
+  // };
+  // sgMail
+  // .send(msg)
+  // .then(() => {}, error => {
+  //   console.log(error);
 
-    console.error(error);
-    if (error.response) {
-      console.error(error.response.body)
-    }
-  });
+  //   console.error(error);
+  //   if (error.response) {
+  //     console.error(error.response.body)
+  //   }
+  // });
 
-  res.redirect('/');
+  // res.redirect('/');
 });
 
 app.listen(PORT, (err) => {
